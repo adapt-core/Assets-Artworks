@@ -1,35 +1,451 @@
-# ADAPT.CORE production asset system
+# ADAPT.CORE Brand Assets
 
-Canonical source: `svg/primary-horizontal-full-color.svg`.
+Brand assets for ADAPT.CORE.
 
-The logo is reconstructed from the supplied `assss.webp` reference. The symbol uses one canonical `stripe-master` path instantiated four times at mathematically consistent offsets. The `ADAPT.CORE` wordmark is custom vector path geometry; it is not live text and does not depend on an installed font.
+- **SVG** files are the source/vector assets.
+- **PNG** files are exports for platforms that require raster images.
 
-## Assets
+---
 
-- `primary-horizontal-*`: full horizontal lockup.
-- `stacked-*`: symbol above wordmark.
-- `symbol-outline-*`: four outlined stripes.
-- `symbol-solid-*`: solid micro symbol for 24 px and below.
-- `wordmark-*`: custom path wordmark only.
-- `square-*`: symbol-first profile/avatar assets with safe area.
-- `print-*`: one-color production-safe versions.
+## Brand Assets
 
-## Responsive behavior
+### Primary Logo
 
-Use the canonical outlined symbol at 128, 64, 48 and 32 px. Use the dedicated solid micro symbol at 24, 16, 12 and 8 px when outline negative space no longer survives. Do not use the horizontal lockup at icon sizes.
+The primary logo consists of the four-stripe symbol and the `ADAPT.CORE` wordmark.
 
-## Color and backgrounds
+Use it when there is enough horizontal space.
 
-Full color uses `#00A0E9`, `#003DBF`, `#173A9A`, `#E60012`. White and black versions are single-color path variants for transparent light/dark surfaces. No gradients, raster fills, effects or shadows are used.
+### Symbol
 
-## Safe area and minimum sizes
+The four-stripe mark can be used by itself when the full logo is unnecessary or does not fit.
 
-For symbol-first assets, reserve clear space equal to one stripe outline width (18% of symbol height) on every side. Keep the horizontal lockup at or above 128 px wide where the wordmark remains comfortably legible; use the symbol below that threshold.
+---
 
-## Print / engraving
+## Which File Should I Use?
 
-Use `print-black.svg` or `print-white.svg` for monochrome documents, vinyl, embroidery, engraving and watermarking. These retain the four-stripe structure with a single solid color.
+| Use case | File |
+|---|---|
+| Website / README / documentation | `svg/primary-horizontal-full-color.svg` |
+| Dark background | `svg/primary-horizontal-white.svg` |
+| Light background | `svg/primary-horizontal-black.svg` |
+| Square or vertical layout | `svg/stacked-full-color.svg` |
+| Symbol only | `svg/symbol-outline-full-color.svg` |
+| Small symbol, 24 px and below | `svg/symbol-solid-micro-full-color.svg` |
+| Discord / GitHub / profile image | `svg/square-profile-full-color.svg` |
+| Wordmark only | `svg/wordmark-full-color.svg` |
+| Print / engraving / vinyl / embroidery | `svg/print-black.svg` |
 
-## Filename convention
+---
 
-`{lockup-or-symbol}-{color}-{size-or-use}.{ext}`. SVG is canonical; PNGs are raster deliverables generated from the approved SVGs only.
+## Symbol Sizes
+
+Use the outlined symbol for normal icon sizes and the solid micro symbol at very small sizes.
+
+| Size | Asset |
+|---:|---|
+| 128 px | `symbol-outline` |
+| 64 px | `symbol-outline` |
+| 48 px | `symbol-outline` |
+| 32 px | `symbol-outline` |
+| 24 px | `symbol-solid-micro` |
+| 16 px | `symbol-solid-micro` |
+| 12 px | `symbol-solid-micro` |
+| 8 px | `symbol-solid-micro` |
+
+Do not simply scale the outlined symbol down to very small sizes.
+
+---
+
+## Primary Horizontal Logo
+
+### SVG
+
+```text
+svg/
+├── primary-horizontal-full-color.svg
+├── primary-horizontal-white.svg
+├── primary-horizontal-black.svg
+└── primary-horizontal-single-color.svg
+```
+
+### PNG
+
+```text
+png/primary-horizontal/
+├── primary-horizontal-full-color-1024.png
+├── primary-horizontal-full-color-512.png
+├── primary-horizontal-full-color-256.png
+├── primary-horizontal-full-color-128.png
+├── primary-horizontal-full-color-64.png
+├── primary-horizontal-full-color-48.png
+├── primary-horizontal-full-color-32.png
+├── primary-horizontal-full-color-24.png
+└── primary-horizontal-full-color-16.png
+```
+
+PNG dimensions refer to the logo's width. The height remains proportional.
+
+---
+
+## Stacked Logo
+
+Use the stacked version when a horizontal logo does not fit.
+
+```text
+svg/
+├── stacked-full-color.svg
+├── stacked-white.svg
+└── stacked-black.svg
+```
+
+Suitable for:
+
+- Square layouts
+- Posters
+- Cards
+- Mobile layouts
+- Vertical layouts
+
+---
+
+## Symbol — Outlined
+
+```text
+svg/
+├── symbol-outline-full-color.svg
+├── symbol-outline-white.svg
+└── symbol-outline-black.svg
+```
+
+PNG exports:
+
+```text
+png/symbol-outline/
+├── symbol-outline-full-color-128.png
+├── symbol-outline-full-color-64.png
+├── symbol-outline-full-color-48.png
+└── symbol-outline-full-color-32.png
+```
+
+---
+
+## Symbol — Solid
+
+```text
+svg/
+├── symbol-solid-full-color.svg
+├── symbol-solid-white.svg
+└── symbol-solid-black.svg
+```
+
+---
+
+## Symbol — Solid Micro
+
+Use this version at 24 px and below.
+
+```text
+svg/
+├── symbol-solid-micro-full-color.svg
+├── symbol-solid-micro-white.svg
+└── symbol-solid-micro-black.svg
+```
+
+PNG exports:
+
+```text
+png/symbol-solid/
+├── symbol-solid-micro-full-color-24.png
+├── symbol-solid-micro-full-color-16.png
+├── symbol-solid-micro-full-color-12.png
+└── symbol-solid-micro-full-color-8.png
+```
+
+---
+
+## Wordmark
+
+The wordmark contains only the `ADAPT.CORE` lettering.
+
+```text
+svg/
+├── wordmark-full-color.svg
+├── wordmark-white.svg
+└── wordmark-black.svg
+```
+
+---
+
+## Square Profile
+
+Use the square profile version for avatars and profile images.
+
+### SVG
+
+```text
+svg/
+├── square-profile-full-color.svg
+├── square-profile-white.svg
+└── square-profile-black.svg
+```
+
+### PNG
+
+```text
+png/profile/
+├── square-profile-full-color-512.png
+├── square-profile-full-color-256.png
+├── square-profile-full-color-128.png
+└── square-profile-full-color-64.png
+```
+
+Recommended:
+
+| Use | File |
+|---|---|
+| Discord | `square-profile-full-color-512.png` |
+| GitHub | `square-profile-full-color-512.png` |
+| Social profiles | `square-profile-full-color-512.png` |
+| App icon | `square-profile-full-color-512.png` |
+| Smaller avatar | `256.png` or `128.png` |
+| Very small avatar | `64.png` |
+
+The square profile asset is intended for square and circular crops.
+
+---
+
+## Monochrome
+
+### White
+
+For dark backgrounds:
+
+```text
+svg/
+├── primary-horizontal-white.svg
+├── symbol-outline-white.svg
+├── symbol-solid-white.svg
+├── symbol-solid-micro-white.svg
+├── stacked-white.svg
+└── wordmark-white.svg
+```
+
+### Black
+
+For light backgrounds and single-color use:
+
+```text
+svg/
+├── primary-horizontal-black.svg
+├── symbol-outline-black.svg
+├── symbol-solid-black.svg
+├── symbol-solid-micro-black.svg
+├── stacked-black.svg
+└── wordmark-black.svg
+```
+
+---
+
+## Print and Physical Production
+
+Use:
+
+```text
+svg/print-black.svg
+```
+
+For:
+
+- Monochrome printing
+- Engraving
+- Laser marking
+- Vinyl cutting
+- Embroidery
+- Other single-color production
+
+---
+
+## SVG vs PNG
+
+### Use SVG when possible
+
+SVG is the preferred format because it can be scaled without losing quality.
+
+Use SVG for:
+
+- Websites
+- GitHub
+- Documentation
+- Presentations
+- Design work
+- Print production
+
+### Use PNG when SVG is not supported
+
+Use PNG for:
+
+- Discord uploads
+- Social platforms
+- Software that requires raster images
+- Other platforms that do not accept SVG
+
+---
+
+## PNG Naming
+
+The number at the end of a PNG filename is its exported size.
+
+Examples:
+
+```text
+primary-horizontal-full-color-1024.png
+```
+
+The logo is **1024 px wide**.
+
+```text
+symbol-outline-full-color-48.png
+```
+
+The symbol is **48 × 48 px**.
+
+```text
+symbol-solid-micro-full-color-16.png
+```
+
+The symbol is **16 × 16 px**.
+
+---
+
+## Complete File Map
+
+### Primary Horizontal
+
+```text
+svg/
+├── primary-horizontal-full-color.svg
+├── primary-horizontal-white.svg
+├── primary-horizontal-black.svg
+└── primary-horizontal-single-color.svg
+
+png/primary-horizontal/
+├── primary-horizontal-full-color-1024.png
+├── primary-horizontal-full-color-512.png
+├── primary-horizontal-full-color-256.png
+├── primary-horizontal-full-color-128.png
+├── primary-horizontal-full-color-64.png
+├── primary-horizontal-full-color-48.png
+├── primary-horizontal-full-color-32.png
+├── primary-horizontal-full-color-24.png
+└── primary-horizontal-full-color-16.png
+```
+
+### Stacked
+
+```text
+svg/
+├── stacked-full-color.svg
+├── stacked-white.svg
+└── stacked-black.svg
+```
+
+### Symbol — Outlined
+
+```text
+svg/
+├── symbol-outline-full-color.svg
+├── symbol-outline-white.svg
+└── symbol-outline-black.svg
+
+png/symbol-outline/
+├── symbol-outline-full-color-128.png
+├── symbol-outline-full-color-64.png
+├── symbol-outline-full-color-48.png
+└── symbol-outline-full-color-32.png
+```
+
+### Symbol — Solid
+
+```text
+svg/
+├── symbol-solid-full-color.svg
+├── symbol-solid-white.svg
+└── symbol-solid-black.svg
+```
+
+### Symbol — Solid Micro
+
+```text
+svg/
+├── symbol-solid-micro-full-color.svg
+├── symbol-solid-micro-white.svg
+└── symbol-solid-micro-black.svg
+
+png/symbol-solid/
+├── symbol-solid-micro-full-color-24.png
+├── symbol-solid-micro-full-color-16.png
+├── symbol-solid-micro-full-color-12.png
+└── symbol-solid-micro-full-color-8.png
+```
+
+### Wordmark
+
+```text
+svg/
+├── wordmark-full-color.svg
+├── wordmark-white.svg
+└── wordmark-black.svg
+```
+
+### Square Profile
+
+```text
+svg/
+├── square-profile-full-color.svg
+├── square-profile-white.svg
+└── square-profile-black.svg
+
+png/profile/
+├── square-profile-full-color-512.png
+├── square-profile-full-color-256.png
+├── square-profile-full-color-128.png
+└── square-profile-full-color-64.png
+```
+
+### Print
+
+```text
+svg/print-black.svg
+```
+
+---
+
+## Directory Structure
+
+```text
+ADAPT.CORE/
+├── svg/
+├── png/
+│   ├── primary-horizontal/
+│   ├── profile/
+│   ├── symbol-outline/
+│   └── symbol-solid/
+├── preview/
+├── source/
+└── README.md
+```
+
+---
+
+## Quick Reference
+
+- **Full logo:** `primary-horizontal`
+- **Symbol:** `symbol-outline`
+- **32 px and above:** `symbol-outline`
+- **24 px and below:** `symbol-solid-micro`
+- **Profile / avatar:** `square-profile`
+- **Single-color production:** `print-black`
+- **Use SVG whenever possible**
+- **Use PNG when the platform requires it**
+
+---
