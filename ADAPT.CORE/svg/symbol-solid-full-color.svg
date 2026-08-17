@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 101" width="242" height="101">
+  <title>ADAPT.CORE solid four-stripe symbol</title>
+  <defs><path id="stripe-solid-master" d="M0 101 40 0h50L51 101H0Z"/></defs>
+  <use href="#stripe-solid-master" fill="#00A0E9"/><use href="#stripe-solid-master" x="59" fill="#003DBF"/><use href="#stripe-solid-master" x="118" fill="#173A9A"/><use href="#stripe-solid-master" x="177" fill="#E60012"/>
+</svg>

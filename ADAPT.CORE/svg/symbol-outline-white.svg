@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 101" width="242" height="101">
+  <title>ADAPT.CORE primary horizontal full color</title>
+  <desc>Canonical production vector. Stripe instances use one master path. Wordmark is custom path geometry.</desc>
+  <defs>
+    <path id="stripe-master" fill-rule="evenodd" d="M0 101 40 0h50L51 101H0Zm12-18h21L63 9H43L12 83Z"/>
+  </defs>
+  <g id="symbol" aria-label="four outlined stripes">
+    <use href="#stripe-master" fill="#FFFFFF"/>
+    <use href="#stripe-master" x="59" fill="#FFFFFF"/>
+    <use href="#stripe-master" x="118" fill="#FFFFFF"/>
+    <use href="#stripe-master" x="177" fill="#FFFFFF"/>
+  </g>
+</svg>

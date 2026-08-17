@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 101" width="1024" height="101">
+  <title>ADAPT.CORE primary horizontal full color</title>
+  <desc>Canonical production vector. Stripe instances use one master path. Wordmark is custom path geometry.</desc>
+  <defs>
+    <path id="stripe-master" fill-rule="evenodd" d="M0 101 40 0h50L51 101H0Zm12-18h21L63 9H43L12 83Z"/>
+  </defs>
+  <g id="symbol" aria-label="four outlined stripes">
+    <use href="#stripe-master" fill="#000000"/>
+    <use href="#stripe-master" x="59" fill="#000000"/>
+    <use href="#stripe-master" x="118" fill="#000000"/>
+    <use href="#stripe-master" x="177" fill="#000000"/>
+  </g>
+  <g id="wordmark" fill="#000000" fill-rule="evenodd">
+    <path id="glyph-A-1" transform="translate(276 17)" d="M0 60 20 0h39l20 60H59l-5-13H25l-5 13H0Zm30-28h18L39 10 30 32Z"/>
+    <path id="glyph-D" transform="translate(368 17)" d="M0 0h37l28 14v32L37 60H0V0Zm18 15v30h16l13-7V22l-13-7H18Z"/>
+    <path id="glyph-A-2" transform="translate(443 17)" d="M0 60 20 0h38l20 60H58l-5-13H25l-5 13H0Zm30-28h18L39 10 30 32Z"/>
+    <path id="glyph-P" transform="translate(535 17)" d="M0 0h44l22 12v21L44 45H18v15H0V0Zm18 15v15h18l12-6v-3l-12-6H18Z"/>
+    <path id="glyph-T" transform="translate(612 17)" d="M0 0h69v15H43v45H25V15H0V0Z"/>
+    <path id="glyph-period" transform="translate(696 35)" d="M0 0h12v22H0V0Z"/>
+    <path id="glyph-C" transform="translate(723 17)" d="M16 0h50v15H24l-6 6v18l6 6h42v15H16L0 45V15L16 0Z"/>
+    <path id="glyph-O" transform="translate(802 17)" d="M16 0h36l16 15v30L52 60H16L0 45V15L16 0Zm8 15-6 6v18l6 6h20l6-6V21l-6-6H24Z"/>
+    <path id="glyph-R" transform="translate(885 17)" d="M0 0h43l22 12v20L49 39l19 21H46L28 40H18v20H0V0Zm18 15v10h17l12-5v-1l-12-4H18Z"/>
+    <path id="glyph-E" transform="translate(964 17)" d="M0 0h60v15H18v7h34v15H18v8h60v15H0V0Z"/>
+  </g>
+</svg>
